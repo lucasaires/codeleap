@@ -18,6 +18,10 @@ export const Modal = styled.div`
   border-radius: 10px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   padding: 2rem;
+
+  @media (max-width: 639px) {
+    max-height: 230px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -39,12 +43,10 @@ export const ButtonContainer = styled.div`
     display: flex;
     justify-content: end;
     align-items: center;
+
+    @media (max-width: 639px) {
+    margin-top: 0.5rem;
+  }
   }
 `;
 
-export const CustomLink = styled(Link)`
-  font: ${(props) => props.theme.fonts["roboto-700"]};
-  text-decoration: none;
-  font-size: 1rem;
-  color: ${(props) => props.theme.colors["white"]};
-`;

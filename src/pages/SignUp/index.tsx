@@ -11,7 +11,6 @@ import {
   Description,
   Modal,
   Title,
-  CustomLink as Link,
 } from "./styled";
 
 export function SignUp() {
